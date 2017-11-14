@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10451" started-at="2017-11-14T11:06:18Z" finished-at="2017-11-14T11:06:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10451" started-at="2017-11-14T11:06:18Z" finished-at="2017-11-14T11:06:29Z">
+      <class name="seleniumtips.TestAllLinks">
+        <test-method status="PASS" signature="testLinks()[pri:0, instance:seleniumtips.TestAllLinks@215be6bb]" name="testLinks" duration-ms="10434" started-at="2017-11-14T16:36:18Z" finished-at="2017-11-14T16:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinks -->
+      </class> <!-- seleniumtips.TestAllLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
