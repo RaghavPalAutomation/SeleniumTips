@@ -33,11 +33,13 @@ public class TestAllLinks {
 		int responseCode=200;
 
 		while(it.hasNext()){
-
+			
+			// Step 4 : Get url
 			url = it.next().getAttribute("href");
 
 			System.out.println("Checking link : "+url);
-
+			
+			// Step 5 : Check if url is empty
 			if(url == null || url.isEmpty()){
 				System.out.println("URL is either not configured for anchor tag or it is empty");
 				continue;
@@ -45,14 +47,18 @@ public class TestAllLinks {
 
 
 			try {
+				
+				// Step 6 : Create a http connection variable and connect to url
 				connection = (HttpURLConnection)(new URL(url).openConnection());
 
 				connection.setRequestMethod("HEAD");
 
 				connection.connect();
-
+				
+				// Step 7 : Fetch response code
 				responseCode = connection.getResponseCode();
 
+				// Step 8 : Write expectation as per the response fetched
 				if(responseCode >= 400){
 					System.out.println(url+" is a broken link");
 				}
